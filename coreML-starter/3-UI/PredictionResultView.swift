@@ -14,7 +14,7 @@ struct PredictionResultView: View {
         // TODO: The View that shows classification results - edit the styling below!
         VStack(){
             Spacer()
-                .frame(height: 60)
+                .frame(height: 120)
             HStack(alignment: .top) {
                 Text(labelData.emoji)
                     .font(.system(size: 100))

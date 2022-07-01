@@ -16,7 +16,7 @@ struct AboutView: View {
             )
             .edgesIgnoringSafeArea(.all)
             
-            VStack {
+            ScrollView {
                 Text("About the Creators!")
                     .font(.title)
                     .foregroundColor(Color("2"))
@@ -28,30 +28,35 @@ struct AboutView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .shadow(radius: 5)
-                        Text("Violet Monserate")
+                        Text("Violet \nMonserate")
                             .foregroundColor(Color("2"))
-                            .font(.title2)
+                            .font(.body)
                             .fontWeight(.semibold)
-                            .padding([.bottom], 8)
-                        Text("\"I am 17 years old and attend Raisbeck Aviation High School. My interests lie in activism and all things techy! This app could be the future of environmental advocacy, available to all!\"")
+                            .multilineTextAlignment(.center)
+                            
+                        Text("\"I am 17 years old and attend Raisbeck Aviation High School. My interests lie in activism and all things techy! This app could be the future of environmental advocacy, available to all!\"\n")
                             .foregroundColor(Color("2"))
+                            .font(.caption)
                             .italic()
-                        .multilineTextAlignment(.center)
+                            .multilineTextAlignment(.center)
                     }
                     VStack(alignment: .center) {
                         Image("Chelsea")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .shadow(radius: 5)
-                        Text("Chelsea Liu")
+                        Text("Chelsea \nLiu")
                             .foregroundColor(Color("2"))
-                            .font(.title2)
+                            .font(.body)
                             .fontWeight(.semibold)
-                            .padding([.bottom], 8)
+                        
+                            .multilineTextAlignment(.center)
+                            
             
                         Text("\"I am a 17 year old rising senior at Lakeside School, and I am hoping to study subjects such as business and tech. I think this app is an awesome way to show how tech can impact the world!\"")
                             .foregroundColor(Color("2"))
                             .italic()
+                            .font(.caption)
                             .multilineTextAlignment(.center)
                     }
                     VStack(alignment: .center) {
@@ -59,14 +64,16 @@ struct AboutView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .shadow(radius: 5)
-                        Text("Pari Aiyer")
+                        Text("Pari \nAiyer")
                             .foregroundColor(Color("2"))
-                            .font(.title2)
+                            .font(.body)
                             .fontWeight(.semibold)
-                            .padding([.bottom], 8)
-                        Text("\"I am a rising junior in the greater Seattle area. I love exploring the role of design in a technology driven world and am always striving towards living a more sustainable life\"")
+                            .multilineTextAlignment(.center)
+                            
+                        Text("\"I am a rising junior in the greater Seattle area. I love exploring the role of design in a technology driven world and am always striving towards living a more sustainable life\"\n\n")
                             .foregroundColor(Color("2"))
                             .italic()
+                            .font(.caption)
                             .multilineTextAlignment(.center)
                     }
                     
@@ -77,7 +84,7 @@ struct AboutView: View {
                     .font(.body)
 
             }
-            .padding(.init(top: 0, leading: 30, bottom: 40, trailing: 30 ))
+            .padding(.init(top: 0, leading: 30, bottom: 0, trailing: 30 ))
         }
     }
         
