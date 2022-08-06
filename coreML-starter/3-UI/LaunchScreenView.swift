@@ -11,16 +11,13 @@ struct LaunchScreenView: View {
     var body: some View {
         VStack {
             VStack {
-                // header image:
-                // TODO: replace with your own image.  Drag an image from your computer to assets.xcassets and add the name of your image below
+                // Logo
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 250)
-                // image from: https://www.pngitem.com/middle/ioRbwwh_what-is-water-footprint-safe-water-save-life/
                 
                 // title
-                // TODO: Replace app title
                 Text("iRecycle")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -75,7 +72,6 @@ struct LaunchScreenView: View {
                 .padding()
                 
                 // byline
-                // TODO: Add your names
                 Text("Created by Pari Aiyer, Vi Monserate, and Chelsea Liu")
                     .font(.caption)
                     .padding()

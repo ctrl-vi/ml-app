@@ -13,7 +13,7 @@
 		A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */; };
 		A555EF2C27F3CF55006372C8 /* PredictionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555EF2B27F3CF55006372C8 /* PredictionResultView.swift */; };
 		A562F07327EE7E7A00602D4E /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562F07127EE7E7A00602D4E /* Classification.swift */; };
-		A562F07427EE7E7A00602D4E /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = A562F07227EE7E7A00602D4E /* mydata.json */; };
+		A562F07427EE7E7A00602D4E /* seattle.json in Resources */ = {isa = PBXBuildFile; fileRef = A562F07227EE7E7A00602D4E /* seattle.json */; };
 		A59292B728249C180083008B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59292B628249C180083008B /* AboutView.swift */; };
 		A5D6917127EA441E00101791 /* coreML_starterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917027EA441E00101791 /* coreML_starterApp.swift */; };
 		A5D6917327EA441E00101791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6917227EA441E00101791 /* ContentView.swift */; };
@@ -24,7 +24,8 @@
 		A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918827EA466400101791 /* LiveCameraViewController.swift */; };
 		A5D6918D27EA48B100101791 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918C27EA48B100101791 /* Constants.swift */; };
 		A5D6919027EA48F900101791 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918F27EA48F900101791 /* Helpers.swift */; };
-		BD3B8698286F780400F25992 /* IRecycle.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD3B8697286F780400F25992 /* IRecycle.mlmodel */; };
+		AB2DBAF6289E306500AA9C88 /* IRecycle.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AB2DBAF5289E306500AA9C88 /* IRecycle.mlmodel */; };
+		ABF0D21F289E4CAC00733EAB /* newYork.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D21E289E4CAC00733EAB /* newYork.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,7 @@
 		A5236B4B280DE33100DC9D7F /* RoundedRectButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButtonStyle.swift; sourceTree = "<group>"; };
 		A555EF2B27F3CF55006372C8 /* PredictionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResultView.swift; sourceTree = "<group>"; };
 		A562F07127EE7E7A00602D4E /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
-		A562F07227EE7E7A00602D4E /* mydata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
+		A562F07227EE7E7A00602D4E /* seattle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seattle.json; sourceTree = "<group>"; };
 		A59292B628249C180083008B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		A5D6916D27EA441E00101791 /* coreML-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coreML-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D6917027EA441E00101791 /* coreML_starterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreML_starterApp.swift; sourceTree = "<group>"; };
@@ -47,7 +48,8 @@
 		A5D6918C27EA48B100101791 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5D6918F27EA48F900101791 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		A5D6919127EA5B4D00101791 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD3B8697286F780400F25992 /* IRecycle.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = IRecycle.mlmodel; path = ../../../../../Downloads/IRecycle.mlmodel; sourceTree = "<group>"; };
+		AB2DBAF5289E306500AA9C88 /* IRecycle.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IRecycle.mlmodel; sourceTree = "<group>"; };
+		ABF0D21E289E4CAC00733EAB /* newYork.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = newYork.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +76,9 @@
 		A562F07027EE7E7A00602D4E /* 2-Data */ = {
 			isa = PBXGroup;
 			children = (
-				A562F07227EE7E7A00602D4E /* mydata.json */,
+				A562F07227EE7E7A00602D4E /* seattle.json */,
 				A562F07127EE7E7A00602D4E /* Classification.swift */,
+				ABF0D21E289E4CAC00733EAB /* newYork.json */,
 			);
 			path = "2-Data";
 			sourceTree = "<group>";
@@ -143,7 +146,7 @@
 		A5D6918627EA44F200101791 /* 1-Model */ = {
 			isa = PBXGroup;
 			children = (
-				BD3B8697286F780400F25992 /* IRecycle.mlmodel */,
+				AB2DBAF5289E306500AA9C88 /* IRecycle.mlmodel */,
 				A5D6918127EA44C300101791 /* PredictionStatus.swift */,
 			);
 			path = "1-Model";
@@ -225,9 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A562F07427EE7E7A00602D4E /* mydata.json in Resources */,
+				A562F07427EE7E7A00602D4E /* seattle.json in Resources */,
 				A5D6917827EA442000101791 /* Preview Assets.xcassets in Resources */,
 				A5D6917527EA442000101791 /* Assets.xcassets in Resources */,
+				ABF0D21F289E4CAC00733EAB /* newYork.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +245,7 @@
 				A5D6917327EA441E00101791 /* ContentView.swift in Sources */,
 				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
 				A555EF2C27F3CF55006372C8 /* PredictionResultView.swift in Sources */,
-				BD3B8698286F780400F25992 /* IRecycle.mlmodel in Sources */,
+				AB2DBAF6289E306500AA9C88 /* IRecycle.mlmodel in Sources */,
 				A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */,
 				A59292B728249C180083008B /* AboutView.swift in Sources */,
 				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,
@@ -383,7 +387,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"coreML-starter/Preview Content\"";
-				DEVELOPMENT_TEAM = VMD7T463QF;
+				DEVELOPMENT_TEAM = 4NVTX243F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "coreML-starter/Info.plist";
@@ -399,7 +403,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iTrash;
+				PRODUCT_BUNDLE_IDENTIFIER = net.iRecycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -415,7 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"coreML-starter/Preview Content\"";
-				DEVELOPMENT_TEAM = VMD7T463QF;
+				DEVELOPMENT_TEAM = 4NVTX243F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "coreML-starter/Info.plist";
@@ -431,7 +435,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iTrash;
+				PRODUCT_BUNDLE_IDENTIFIER = net.iRecycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -11,7 +11,6 @@ import Vision
 
 class PredictionStatus: ObservableObject {
     @Published var modelUrl = URL(fileURLWithPath: "")
-    // TODO - replace with the name of your classifier
     @Published var modelObject = IRecycle()
     @Published var topLabel = ""
     @Published var topConfidence = ""

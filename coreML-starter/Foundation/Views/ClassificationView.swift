@@ -11,16 +11,15 @@ struct ClassificationView: View {
     @EnvironmentObject var predictionStatus: PredictionStatus
     @StateObject var classifierViewModel = ClassifierViewModel()
     @State private var showAbout = false
+    @State private var selectedArea = Area.seattle
     
     var body: some View {
         let predictionLabel = predictionStatus.topLabel
-        HStack() {
             ZStack(alignment: .topLeading) {
                 LiveCameraRepresentable() {
                     predictionStatus.setLivePrediction(with: $0, label: $1, confidence: $2)
-                    
                 }
-                PredictionResultView(labelData: classifierViewModel.getPredictionData(label: predictionLabel))
+                PredictionResultView(labelData: classifierViewModel.getPredictionData(label: predictionLabel, area: selectedArea))
                 NavigationLink(destination: AboutView(), isActive: $showAbout) {
                     EmptyView()
                 }
@@ -39,8 +38,6 @@ struct ClassificationView: View {
             .background(Color("4"))
             .edgesIgnoringSafeArea(.all)
             .shadow(radius: 50)
-        }
-
     }
 }
 

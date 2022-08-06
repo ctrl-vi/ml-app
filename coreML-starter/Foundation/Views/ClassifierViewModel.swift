@@ -7,16 +7,33 @@
 
 import Foundation
 
+public enum Area {
+    case seattle, newYork
+}
+
 final class ClassifierViewModel: ObservableObject {
-    @Published var classifierData: [Classification] = []
+    @Published var seattleData: [Classification] = []
+    @Published var newYorkData: [Classification] = []
     
     func loadJSON() {
         print("load JSON")
-        if let url = Bundle.main.url(forResource: "mydata", withExtension: "json") {
+        if let url = Bundle.main.url(forResource: "seattle", withExtension: "json") {
             do {
                 let jsonData = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                classifierData = try decoder.decode([Classification].self, from: jsonData)
+                seattleData = try decoder.decode([Classification].self, from: jsonData)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("could not find data")
+        }
+        
+        if let url = Bundle.main.url(forResource: "newYork", withExtension: "json") {
+            do {
+                let jsonData = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                newYorkData = try decoder.decode([Classification].self, from: jsonData)
             } catch {
                 print(error)
             }
@@ -25,7 +42,17 @@ final class ClassifierViewModel: ObservableObject {
         }
     }
     
-    func getPredictionData(label: String) -> Classification {        
-        return classifierData.filter { $0.label == label }.first ?? Classification()
+    func getPredictionData(label: String, area: Area) -> Classification {
+        if(area == .seattle) {
+            return seattleData.filter { $0.label == label }.first ?? Classification()
+        }
+        else if(area == .newYork)
+        {
+            return newYorkData.filter { $0.label == label }.first ?? Classification()
+        }
+        else
+        {
+            return Classification()
+        }
     }
 }
