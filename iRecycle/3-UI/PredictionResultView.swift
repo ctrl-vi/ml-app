@@ -34,7 +34,7 @@ struct PredictionResultView: View {
                 .cornerRadius(20)
                 .padding(15)
                 .shadow(radius: 5)
-                .frame(width: 800)
+                .frame(width: 950)
             }
         }
     }

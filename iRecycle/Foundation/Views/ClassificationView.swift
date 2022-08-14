@@ -24,18 +24,18 @@ struct ClassificationView: View {
             }
             PredictionResultView(labelData: classifierViewModel.getPredictionData(label: predictionLabel, area: selectedArea))
             VStack(alignment: .center) {
-                Spacer().frame(height: 200)
+                Spacer().frame(height: 180)
                 Picker("Title", selection: $selectedArea) {
                     Text("Seattle")
                         .tag(Area.seattle)
-                    Text("New York")
-                        .tag(Area.newYork)
-                    Text("San Francisco")
-                        .tag(Area.sanFrancisco)
-                    Text("Washington, DC")
-                        .tag(Area.dc)
                     Text("Portland")
                         .tag(Area.portland)
+                    Text("San Francisco")
+                        .tag(Area.sanFrancisco)
+                    Text("New York")
+                        .tag(Area.newYork)
+                    Text("Washington, DC")
+                        .tag(Area.dc)
                 }
                 .pickerStyle(.segmented)
                 .frame(width: 800)
