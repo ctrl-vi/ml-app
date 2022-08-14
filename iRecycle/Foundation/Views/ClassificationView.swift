@@ -15,27 +15,32 @@ struct ClassificationView: View {
     
     var body: some View {
         let predictionLabel = predictionStatus.topLabel
-        ZStack(alignment: .topLeading) {
+        ZStack(alignment: .top) {
             NavigationLink(destination: AboutView(), isActive: $showAbout) {
                 EmptyView()
-            PredictionResultView(labelData: classifierViewModel.getPredictionData(label: predictionLabel, area: selectedArea))
             }
-            HStack(alignment: .bottom) {
-                LiveCameraRepresentable() {
-                    predictionStatus.setLivePrediction(with: $0, label: $1, confidence: $2)
-                }
-                Picker("Title", selection: $selectedArea, content: {
-                    Text("Seattle").tag(Area.seattle)
-                        .tag(Area.newYork)
-                        .font(.largeTitle)
-                
+            LiveCameraRepresentable() {
+                predictionStatus.setLivePrediction(with: $0, label: $1, confidence: $2)
+            }
+            PredictionResultView(labelData: classifierViewModel.getPredictionData(label: predictionLabel, area: selectedArea))
+            VStack(alignment: .center) {
+                Spacer().frame(height: 200)
+                Picker("Title", selection: $selectedArea) {
+                    Text("Seattle")
+                        .tag(Area.seattle)
                     Text("New York")
                         .tag(Area.newYork)
-                        .font(.largeTitle)
-                })
-                Spacer(minLength: 100)
+                    Text("San Francisco")
+                        .tag(Area.sanFrancisco)
+                    Text("Washington, DC")
+                        .tag(Area.dc)
+                    Text("Portland")
+                        .tag(Area.portland)
+                }
+                .pickerStyle(.segmented)
+                .frame(width: 800)
             }
-        }// VStack
+        } //ZStack
         .onAppear(perform: classifierViewModel.loadJSON)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {

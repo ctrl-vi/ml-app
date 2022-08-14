@@ -15,7 +15,7 @@ struct PredictionResultView: View {
         ZStack(){
             VStack(){
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height:30)
                 HStack(alignment: .top) {
                     Text(labelData.emoji)
                         .font(.system(size: 100))
@@ -29,15 +29,12 @@ struct PredictionResultView: View {
                         .padding(.init(top: 3, leading: 0, bottom: 5, trailing: 5))
                     }
                     .padding(5)
-                  
-                    
-                    
                 }// HStack
                 .background(Color("1"))
                 .cornerRadius(20)
                 .padding(15)
                 .shadow(radius: 5)
-                
+                .frame(width: 800)
             }
         }
     }
