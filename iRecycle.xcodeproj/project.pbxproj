@@ -24,9 +24,9 @@
 		A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918827EA466400101791 /* LiveCameraViewController.swift */; };
 		A5D6918D27EA48B100101791 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918C27EA48B100101791 /* Constants.swift */; };
 		A5D6919027EA48F900101791 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6918F27EA48F900101791 /* Helpers.swift */; };
-		AB2DBAF6289E306500AA9C88 /* IRecycle.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AB2DBAF5289E306500AA9C88 /* IRecycle.mlmodel */; };
-		ABF0D21F289E4CAC00733EAB /* newYork.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D21E289E4CAC00733EAB /* newYork.json */; };
-		ABF0D22128A833E400733EAB /* portland.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D22028A833E400733EAB /* portland.json */; };
+		ABADDFFA28ABC6F7009013BD /* IRecycle.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ABADDFF928ABC6F7009013BD /* IRecycle.mlmodel */; };
+		ABF0D21F289E4CAC00733EAB /* portland.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D21E289E4CAC00733EAB /* portland.json */; };
+		ABF0D22128A833E400733EAB /* newYork.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D22028A833E400733EAB /* newYork.json */; };
 		ABF0D22328A8351F00733EAB /* sanfrancisco.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D22228A8351F00733EAB /* sanfrancisco.json */; };
 		ABF0D22528A8352800733EAB /* dc.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D22428A8352800733EAB /* dc.json */; };
 /* End PBXBuildFile section */
@@ -51,9 +51,9 @@
 		A5D6918C27EA48B100101791 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5D6918F27EA48F900101791 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		A5D6919127EA5B4D00101791 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB2DBAF5289E306500AA9C88 /* IRecycle.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IRecycle.mlmodel; sourceTree = "<group>"; };
-		ABF0D21E289E4CAC00733EAB /* newYork.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = newYork.json; sourceTree = "<group>"; };
-		ABF0D22028A833E400733EAB /* portland.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portland.json; sourceTree = "<group>"; };
+		ABADDFF928ABC6F7009013BD /* IRecycle.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IRecycle.mlmodel; sourceTree = "<group>"; };
+		ABF0D21E289E4CAC00733EAB /* portland.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portland.json; sourceTree = "<group>"; };
+		ABF0D22028A833E400733EAB /* newYork.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = newYork.json; sourceTree = "<group>"; };
 		ABF0D22228A8351F00733EAB /* sanfrancisco.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sanfrancisco.json; sourceTree = "<group>"; };
 		ABF0D22428A8352800733EAB /* dc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dc.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +84,8 @@
 			children = (
 				A562F07227EE7E7A00602D4E /* seattle.json */,
 				A562F07127EE7E7A00602D4E /* Classification.swift */,
-				ABF0D21E289E4CAC00733EAB /* newYork.json */,
-				ABF0D22028A833E400733EAB /* portland.json */,
+				ABF0D21E289E4CAC00733EAB /* portland.json */,
+				ABF0D22028A833E400733EAB /* newYork.json */,
 				ABF0D22228A8351F00733EAB /* sanfrancisco.json */,
 				ABF0D22428A8352800733EAB /* dc.json */,
 			);
@@ -155,7 +155,7 @@
 		A5D6918627EA44F200101791 /* 1-Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB2DBAF5289E306500AA9C88 /* IRecycle.mlmodel */,
+				ABADDFF928ABC6F7009013BD /* IRecycle.mlmodel */,
 				A5D6918127EA44C300101791 /* PredictionStatus.swift */,
 			);
 			path = "1-Model";
@@ -242,8 +242,8 @@
 				ABF0D22528A8352800733EAB /* dc.json in Resources */,
 				A5D6917527EA442000101791 /* Assets.xcassets in Resources */,
 				ABF0D22328A8351F00733EAB /* sanfrancisco.json in Resources */,
-				ABF0D22128A833E400733EAB /* portland.json in Resources */,
-				ABF0D21F289E4CAC00733EAB /* newYork.json in Resources */,
+				ABF0D22128A833E400733EAB /* newYork.json in Resources */,
+				ABF0D21F289E4CAC00733EAB /* portland.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +257,7 @@
 				A5D6917327EA441E00101791 /* ContentView.swift in Sources */,
 				A5D6918A27EA466400101791 /* LiveCameraViewController.swift in Sources */,
 				A555EF2C27F3CF55006372C8 /* PredictionResultView.swift in Sources */,
-				AB2DBAF6289E306500AA9C88 /* IRecycle.mlmodel in Sources */,
+				ABADDFFA28ABC6F7009013BD /* IRecycle.mlmodel in Sources */,
 				A5236B4C280DE33100DC9D7F /* RoundedRectButtonStyle.swift in Sources */,
 				A59292B728249C180083008B /* AboutView.swift in Sources */,
 				A5D6919027EA48F900101791 /* Helpers.swift in Sources */,

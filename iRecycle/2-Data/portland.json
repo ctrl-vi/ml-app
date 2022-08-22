@@ -1,57 +1,57 @@
 [
     {
         "label": "Clamshell",
-        "desc": "iRecycle identified the waste as a clamshell box! This is not recyclable in King County, so throw it in the trash.",
-        "emoji": "⚠️"
+        "desc": "iRecycle identified the waste as a clamshell box! This is recyclable in Portland, so throw it in the trash.",
+        "emoji": "🗑"
     },
     {
         "label": "Soda Can",
-        "desc": "iRecycle identified the waste as soda can. Give it a quick rinse and put it in the recycle bin!",
-        "emoji": "⚠️"
+        "desc": "iRecycle identified the waste as a soda can. Give it a quick rinse and put it in the recycle bin. Tip: collect your deposit fund from participating stores or centers!",
+        "emoji": "♻️"
     },
     {
         "label": "Yogurt",
-        "desc": "iRecycle identified the waste as yogurt cup. Wash the cup, then remove the peel-off lid and outside label and dispose those items in the trash. The plastic container is recyclable!",
-        "emoji": "⚠️"
+        "desc": "iRecycle identified the waste as a yogurt cup. Wash the cup and place the lid and outside label in the trash. The plastic container is recyclable as long as it's larger than 6 oz.",
+        "emoji": "🗑♻️"
     },
     {
         "label": "Water Bottle",
-        "desc": "iRecycle identified the waste as water bottle. Make sure the bottle is empty, then take off the bottle cap and plastic label on desc bottle and dispose in the trash. The clear plastic bottle is recyclable!",
-        "emoji": "⚠️"
+        "desc": "iRecycle identified the waste as water bottle. Make sure the bottle is empty, then take off the bottle cap and plastic label on water bottle and dispose in the trash. The plastic bottle is recyclable!",
+        "emoji": "🗑♻️"
     },
     {
         "label": "Mylar Bag",
         "desc": "iRecycle identified the waste as non-recyclable plastic. Snack bags cannot be recycled. Alternative tip: Buy in bulk and use reusable snack containers to reduce waste!",
-        "emoji": "⚠️"
+        "emoji": "🗑"
     },
     {
         "label": "Plastic Wrap",
         "desc": "iRecycle identified the waste as plastic wrap. This item is not recyclable. Alternative tip: Try beeswax wrap that can be washed and reused!",
-        "emoji": "⚠️"
+        "emoji": "🗑"
     },
     {
         "label": "Foil",
-        "desc": "iRecycle identified the waste as foil. Most foil is not recyclable as it is soiled with food and grease. Try to reuse your foil as much as possible if necessary to use.",
-        "emoji": "⚠️"
+        "desc": "iRecycle identified the waste as foil. Most foil is not recyclable as it is soiled with food and grease. Tip: try to reuse your foil as much as possible!",
+        "emoji": "♻️"
     },
     {
         "label": "Plastic Bag",
-        "desc": "iRecycle identified the waste as plastic bag. Plastic bags are not recyclable. If possible, bring reusable tote bags for grocery shopping!👜",
-        "emoji": "⚠️"
+        "desc": "iRecycle identified the waste as plastic bag. Plastic bags are not recyclable, BUT are reusable! If possible, bring reusable tote bags for grocery shopping!👜",
+        "emoji": "🗑"
     },
     {
         "label": "Paper",
         "desc": "iRecycle identified the waste as paper. Most paper is recyclable. Just make sure the paper is not contaminated with food or liquid, is not shredded, and does not have wax coating.📰",
-        "emoji": "⚠️"
+        "emoji": "♻️"
     },
     {
         "label": "Compost",
         "desc": "iRecycle identified the waste as compost. You can either have an outdoor compost pile, or use an indoor compost bin!",
-        "emoji": "⚠️"
+        "emoji": "🌱"
     },
     {
         "label": "Mask",
         "desc": "iRecycle identified the waste as a mask. Masks are not recyclable. Try to reuse your masks for as long as possible.",
-        "emoji": "⚠️"
+        "emoji": "🗑"
     }
 ]

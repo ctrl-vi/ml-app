@@ -119,7 +119,7 @@ final class LiveCameraViewController: UIViewController {
         previewLayer?.connection?.videoOrientation = videoOrientationFromCurrentDeviceOrientation()
         let scaleFactor = 0.70
         let dimension = min (liveVideoFeedDisplayLayer.frame.size.width * scaleFactor, liveVideoFeedDisplayLayer.frame.size.height * scaleFactor)
-        previewLayer?.frame = CGRect(x: 260, y:240, width: dimension , height: dimension)
+        previewLayer?.frame = CGRect(x: 260, y:230, width: dimension , height: dimension)
         
         guard let previewLayer = previewLayer else { return }
         liveVideoFeedDisplayLayer.insertSublayer(previewLayer, at: 0)

@@ -55,7 +55,7 @@ final class ClassifierViewModel: ObservableObject {
             print("could not find data")
         }
         
-        if let url = Bundle.main.url(forResource: "sanFrancisco", withExtension: "json") {
+        if let url = Bundle.main.url(forResource: "sanfrancisco", withExtension: "json") {
             do {
                 let jsonData = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
